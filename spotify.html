@@ -1,0 +1,937 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Spotify music</title>
+    <link rel="stylesheet" href="spotify.css">
+</head>
+<body>
+
+    <!-- start code -->
+    <div  class="all-centr" id="takeOutclick">
+        <div class="full-height res1" style="border: 1px solid rgba(255, 255, 255, 0);">
+
+            <!-- here content for home and search -->
+            <div class="response">
+                <div class="home-search "> 
+                    <div onclick="hideMenu1()" id="active" class="home d-f">
+                        <span id="home-srch" class="material-symbols-outlined">
+                            home
+                        </span>
+                        <p class="v ">Home</p>
+                    </div>     
+                    <div onclick="showMenu();show()" class="search d-f">
+                        <span id="home-srch" class="material-symbols-outlined b">
+                            search
+                        </span>
+                        <p class="v ">Search</p>
+                    </div>
+                    <div class="libr response noned d-f">
+                        <span class="material-symbols-outlined ">
+                            book
+                        </span>
+                        <span class="spaan change v ">Your Library</span>
+                    </div>
+                    <div class="d-f b">
+                        <i class="fa-brands fa-spotify gy"></i>
+                        <span class="v parrot b">Premium</span>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- here content for music library -->
+            <div class="your-library response res1 r2">
+                <div class="library">
+                    <div class="libr response">
+                        <span class="material-symbols-outlined">
+                            book
+                        </span>
+                        <div class="para"><span class="spaan change">Your Library</span>
+                            <span class="collap">
+                                Collapse Your Library
+                            </span>
+                        </div>
+                    </div>
+    
+                    <div class="plus-and-arrow-sign">
+                        <!-- span for plus -->
+                        <div class="leftway">
+                            <div class="create-ply-list">
+                                <span id="s-p-n" class="material-symbols-outlined">
+                                    add
+                                </span>
+                                <p class="same k">
+                                    Create Playlist or Folder
+                                </p>
+                            </div>
+                        </div>
+            
+                        <!-- span for arrow -->
+                        <div class="rightway">
+                            <div class="create-ply-list">
+                                <span id="spn1" class="material-symbols-outlined">
+                                    arrow_forward
+                                </span>
+                                <p class="same l">
+                                    Enlarge Your Library
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- for playlist  -->
+                <div class="for-playlist-album-and-artist">
+                    <div class="p-a-a">
+                        <p class="playlist">
+                            Playlist
+                        </p>
+                    </div>
+                    <div class="p-a-a album">
+                        <p class="playlist">
+                            Albums
+                        </p>
+                    </div>
+                    <div class="p-a-a artist">
+                        <p class="playlist">
+                            Artists
+                        </p>
+                    </div>
+                </div>
+            
+                <!-- for music data gettig -->
+    
+                <div class="scroller">
+                    <div class="music-fetch">
+                        <div class="music-recent">
+                            <div class="search-next">
+                                <i id="iii" class="material-icons">search
+                                    <p class="mm" id="hover">
+                                        Search in Your Library
+                                    </p>
+                                </i>
+                            </div>
+                            <div class="recent">
+                                <p id="recent">
+                                    Recents
+                                    <span id="downr" class="material-symbols-outlined">
+                                        arrow_drop_down
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="liked-songs">
+                            <img src="liked.jpg" alt="image">
+                            <h5>Liked Songs</h5>
+                            <i class='bx bxs-pin'></i>
+                            <p id="ply">playlist. 5songs</p>
+                        </div>
+                    </div>
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+        
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+        
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+        
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+        
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+        
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+        
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+    
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+                    
+                    <div class="dynamic-playlist">
+                        <div class="profiles">
+                            <img id="arijit" src="arijit.jpg" alt="">
+                        </div>
+                        <p id="singh">Arijit Singh</p>
+                        <p id="asingh">Artist</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- music search section -->
+    
+        <div class="music-section scroller1">
+    
+                 <!-- for making a responsive greeding in web pages -->
+            <div class="hid" id="hider">
+                <div class="greeting">
+                    <div class="g-main-greeting">
+                        <div class="side-greeting">
+                            <span class="good-evenig">Good evening</span>
+                        </div>
+                        <div class="side-bar-greeting">
+                            <div class="span-greeting">
+                                <div class="ab-notifications adg">
+                                    <span class="material-symbols-outlined">
+                                        notifications
+                                    </span>
+                                </div>
+                                <div class="ac-pace adg">
+                                    <span class="material-symbols-outlined">
+                                        pace
+                                    </span>
+                                </div>
+                                <div class="ad-settings adg">
+                                    <span class="material-symbols-outlined">
+                                            settings
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="up-main-greeting stick">
+                        <div class="music-greeiting gt">
+                            <span class="music">Music</span>
+                        </div>
+                        <div class="podcasts-and-show gt">
+                            <span class="pod">Podcasts & Show</span>
+                        </div>
+                    </div>
+                </div>
+         
+                <div class="stickyy hy">
+                    <div class="main-arrow">
+                        <div class="positions">
+                            <div class="left-arrow">
+                                <span style="color: rgba(255, 255, 255, 0.447);" class="material-symbols-outlined">
+                                    chevron_left
+                                </span>
+                            </div>
+                            <div class="right-arrow">
+                                <span style="color: rgba(255, 255, 255, 0.447);" class="material-symbols-outlined">
+                                    chevron_right
+                                </span>
+                            </div>
+                        </div>
+                        
+                        <div class="upgrade">
+                            <div class="up1">
+                                <span id="upgrade" style="font-weight: bold; padding: 0px 9px;">Upgrade</span> 
+                                <div class="premium">Upgrade to premium</div>
+                            </div>
+                            
+                            <div class="profiler">
+                                <span style="color: rgb(255, 255, 255);" class="material-symbols-outlined">
+                                    person
+                                    <div class="name-profile">Suraj vishwakarma</div>
+                                    <div class="upward name-profile">Suraj vishwakarma</div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- music trending uploaded here. -->
+                
+                <div class="for-music-ply-head non">
+                    <div class="music-centered">
+                        <div class="for-msc">
+                            <img id="imgw" src="trending.png" alt="music logo">
+                        </div>
+                        <div class="title-music">
+                            <div class="magic">
+                                <p id="parara">
+                                    PLAYLIST
+                                </p>
+                                <p id="pa">
+                                    Sponsored
+                                </p>
+                            </div>
+                            <div class="trending">
+                            <div class="trend">
+                                <h1 id="heaad">
+                                    Trending insta Reels 2023 | Hindi 
+                                </h1>
+                            </div>
+                            <div class="description-for-music">
+                                <p id="listen">
+                                    Listen to the biggest trending songs and other hits...Only on the Trending Insta Reels Playlist! Follow Now!
+                                </p>
+                            </div>
+                            <div class="play-follow">
+                                <div class="ant">
+                                    <div class="abc">
+                                        <div class="play">
+                                            <p id="pl">
+                                                Play
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="abcd">
+                                        <div class="follow">
+                                            <p id="f">
+                                                Follow
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="three-dots">
+                                        <span id="sn" class="material-symbols-outlined">
+                                            more_horiz
+                                            <div class="write-more">More</div>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="getcenter">
+                    <div class="music-array" >
+                        <div class="main-rec">
+                            <div class="recent-container lt">
+                                <div class="show-one">Recent player</div>
+                                <div class="show-all">Show all</div>
+                            </div>
+                        </div>
+                        
+                        <div class="music-main">
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="recent-container r1">
+                        <div class="show-one show1">Made For Suraj Vishwakarma</div>
+                    </div>
+            
+                    <div class="music-array">
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="recent-container r1">
+                        <div class="show-one show1">Hip Hop</div>
+                    </div>
+            
+                    <div class="music-array">
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+            
+                        <div class="poster-containers acd">
+                            <div class="music-poster">
+                                <img src="arijit.jpg">
+                                <div class="sharp">
+                                    <i class="fa-sharp fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                            <div class="artist-name">
+                                Sanam Re (Arijit Singh...)
+                                <span>Arijit Singh</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+           
+            <!-- search device -->
+            <div class="onemore-1 nooonnn" id="hiding">
+                <div id="hideMenu" class="search-division">
+                    
+                    <div class="stickyy hy stk">
+                        <div class="main-arrow">
+                            <div class="positions plp">
+                                <div class="left-arrow">
+                                    <span style="color: rgba(255, 255, 255, 0.447);" class="material-symbols-outlined">
+                                        chevron_left
+                                    </span>
+                                </div>
+                                <div class="right-arrow">
+                                    <span style="color: rgba(255, 255, 255, 0.447);" class="material-symbols-outlined">
+                                        chevron_right
+                                    </span>
+                                </div>
+                                <div class="another-ser" id="cs">
+                                    <div onclick="clickSearch()" class="searching-box">
+                                        <span id="lo" class="material-symbols-outlined">
+                                            search
+                                        </span>
+                                        <input type="search" id="searchings" placeholder="What do you want to listen to?">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="upgrade">
+                                <div class="profiler">
+                                    <span style="color: rgb(255, 255, 255);" class="material-symbols-outlined">
+                                        person
+                                        <div class="name-profile">Suraj vishwakarma</div>
+                                        <div class="upward name-profile">Suraj vishwakarma</div>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="getcenter getone">
+
+                        <!-- <nav>
+                            <div>
+                                <input type="text" id="searchTerm">
+                                <button id="searchTermBtn">Search</button>
+                            </div>
+                        </nav> -->
+
+                        <div class="music-array" >
+                            <div class="main-rec">
+                                <div class="recent-container lt">
+                                    <div class="show-one">Recent searches</div>
+                                    <div class="show-all">Show all</div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="music-main">
+                                <!-- <div id="musicBox" class="poster-containers acd">
+                                    <div class="music-poster">
+                                        <img src="arijit.jpg">
+                                        <div class="sharp">
+                                            <i class="fa-sharp fa-solid fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="artist-name">
+                                        Sanam Re (Arijit Singh...)
+                                        <span>Arijit Singh</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="poster-containers acd">
+                                    <div class="music-poster">
+                                        <img src="arijit.jpg">
+                                        <div class="sharp">
+                                            <i class="fa-sharp fa-solid fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="artist-name">
+                                        Sanam Re (Arijit Singh...)
+                                        <span>Arijit Singh</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="poster-containers acd">
+                                    <div class="music-poster">
+                                        <img src="arijit.jpg">
+                                        <div class="sharp">
+                                            <i class="fa-sharp fa-solid fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="artist-name">
+                                        Sanam Re (Arijit Singh...)
+                                        <span>Arijit Singh</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="poster-containers acd">
+                                    <div class="music-poster">
+                                        <img src="arijit.jpg">
+                                        <div class="sharp">
+                                            <i class="fa-sharp fa-solid fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="artist-name">
+                                        Sanam Re (Arijit Singh...)
+                                        <span>Arijit Singh</span>
+                                    </div>
+                                </div>
+                    
+                                <div class="poster-containers acd">
+                                    <div class="music-poster">
+                                        <img src="arijit.jpg">
+                                        <div class="sharp">
+                                            <i class="fa-sharp fa-solid fa-play"></i>
+                                        </div>
+                                    </div>
+                                    <div class="artist-name">
+                                        Sanam Re (Arijit Singh...)
+                                        <span>Arijit Singh</span>
+                                    </div>
+                                </div> -->
+                            </div>
+                            
+                        </div>
+                        
+                        <div class="recent-container r1">
+                            <div class="show-one show1">Made For Suraj Vishwakarma</div>
+                        </div>
+                
+                        <div class="music-array">
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <div class="recent-container r1">
+                            <div class="show-one show1">Hip Hop</div>
+                        </div>
+                
+                        <div class="music-array">
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                
+                            <div class="poster-containers acd">
+                                <div class="music-poster">
+                                    <img src="arijit.jpg">
+                                    <div class="sharp">
+                                        <i class="fa-sharp fa-solid fa-play"></i>
+                                    </div>
+                                </div>
+                                <div class="artist-name">
+                                    Sanam Re (Arijit Singh...)
+                                    <span>Arijit Singh</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fix-pos nooonnn">
+            
+        </div>
+    
+    
+    
+    
+        <!-- Music controller start -->
+        
+        <div class="music-controller">
+            <div class="left-music">
+                <div class="image-mc">
+                    <div class="p">
+                        <img class="lllrrr" id="cnt" src="liked.jpg" alt="">
+                    </div>
+                    <div class="rott">
+                        <span id="rotate" class="material-symbols-outlined">
+                            chevron_left
+                        </span>
+                        <div class="hover1">
+                            <p id="d">Expand</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="art-content">
+                    <span class="arts">Sanam Re (Arijit Singh...)</span>
+                    <span class="artss">Arijit Singh</span>
+                </div>
+                <div class="hearts">
+                    <i class="fa-regular fa-heart oppo"></i>
+                    <span class="hover2">Save Your Library</span>
+                </div>
+            </div>
+            
+            <div class="shuffle-container">
+                <div class="controlll">
+                    <div class="a shuffle">
+                        <i class="fa-solid fa-shuffle"></i>
+                        <span id="j" class="hover2">Enable suffle</span>
+                    </div>
+                    <div class="a previous">
+                        <i class="fa-solid fa-backward-step"></i>
+                        <span id="k" class="hover2">Previous</span>
+                    </div>
+                    <div class="plays">
+                        <div class=" t players">
+                            <i id="cl" class="fa-solid fa-play"></i>
+                            <span id="l" class="hover2">Play</span>
+                        </div>
+                    </div>
+                    <div class="a nexts">
+                        <i class="fa-solid fa-forward-step"></i>
+                        <span id="o" class="hover2">Next</span>
+                    </div>
+                    <div class="a repeats">
+                        <i class="fa-solid fa-repeat"></i>
+                        <span id="q" class="hover2">Enable repeat</span>
+                    </div>
+                </div>
+                <div class="rangeee">
+                    <div class="input-range">
+                        <span class="start-num">
+                            0:00
+                        </span>
+                        <input class="slider" type="range" name="range" id="range">
+                        <span class="end-num">
+                            5:00
+                        </span>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="lyris-container">
+                <div class="a mic">
+                    <i class="fa-solid fa-microphone"></i>
+                    <span id="z" class="hover2">Lyrics</span>
+                </div>            
+                <div class="a queue">
+                    <i class="fa-solid fa-align-justify"></i>
+                    <span id="y" class="hover2">Queue</span>
+                </div>
+                <div class="a devicer">
+                    <span class="material-symbols-outlined">
+                        devices
+                    </span>
+                    <span id="x" class="hover2">Connect to a device</span>
+                </div>
+                <div class="mute-container">
+                    <div class="a mute">
+                        <i class="fa-solid fa-volume-low"></i>
+                        <span id="w" class="hover2">Mute</span>
+                    </div>
+                    <div class="ranger1">
+                        <input type="range" name="range" id="rangg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="spotify.js"></script>
+
+</body>
+</html>
